@@ -93,3 +93,5 @@ document.addEventListener('DOMContentLoaded', () => {
     // Auto-reveal hero elements
     setTimeout(() => animateCounters(), 500); // trigger counter for hero section
 });
+
+document.querySelector('.mobile-toggle').addEventListener('click', () => { document.querySelector('.nav-links').classList.toggle('active'); });
