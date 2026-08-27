@@ -6,7 +6,8 @@
   --bg-alternate: #FFFFFF;
   --primary-navy: #12304A;
   --secondary-blue: #5B9BB5;
-  --accent-gold: #B59A62;
+  --accent-cyan: #0A84FF;
+
   --text-primary: #12304A;
   --text-secondary: #4a5568;
   --border-subtle: rgba(18, 48, 74, 0.12);
@@ -61,7 +62,7 @@ h4 {
 
 /* No gradients */
 .overtitle {
-  color: var(--accent-gold);
+  color: var(--accent-cyan);
   font-family: var(--font-body);
   font-weight: 500;
   font-size: 0.85rem;
@@ -213,20 +214,25 @@ h4 {
 }
 
 .mega-menu-col ul li {
-  margin-bottom: 15px;
+  margin-bottom: 2px;
 }
 
 .mega-menu-col ul li a {
   color: var(--text-secondary);
+  display: block;
+  padding: 8px 12px;
+  margin-left: -12px;
+  border-radius: 6px;
   text-decoration: none;
   font-size: 0.95rem;
   font-family: var(--font-body);
   font-weight: 400;
-  transition: var(--transition);
+  transition: all 0.2s ease;
 }
 
 .mega-menu-col ul li a:hover {
   color: var(--secondary-blue);
+  background: rgba(91, 155, 181, 0.08);
 }
 
 /* Buttons */
@@ -359,7 +365,7 @@ h4 {
 
 .stat-plus {
   font-size: 1.5rem;
-  color: var(--accent-gold);
+  color: var(--accent-cyan);
   font-weight: 500;
   position: relative;
   top: -15px;
@@ -391,7 +397,7 @@ h4 {
 .header-line {
   height: 1px;
   width: 80px;
-  background: var(--accent-gold);
+  background: var(--accent-cyan);
 }
 
 .right-align .header-line {
@@ -414,7 +420,7 @@ h4 {
 }
 
 .glass-card:hover {
-  border-color: var(--accent-gold);
+  border-color: var(--accent-cyan);
 }
 
 .card-title {
@@ -430,7 +436,7 @@ h4 {
 }
 
 .about .glass-card {
-  border-left: 3px solid var(--accent-gold) !important;
+  border-left: 3px solid var(--accent-cyan) !important;
 }
 
 /* Domains of Expertise */
@@ -466,7 +472,7 @@ h4 {
   padding: 60px;
   border-radius: var(--border-radius);
   margin-top: 80px;
-  border-left: 2px solid var(--accent-gold) !important;
+  border-left: 2px solid var(--accent-cyan) !important;
 }
 
 .quote {
@@ -481,7 +487,7 @@ h4 {
 
 /* Founder & Roster */
 .founder-profile {
-  border-top: 2px solid var(--accent-gold);
+  border-top: 2px solid var(--accent-cyan);
   background: var(--bg-main);
   border-left: 1px solid var(--border-subtle);
   border-right: 1px solid var(--border-subtle);
@@ -496,7 +502,7 @@ h4 {
 }
 
 .founder-profile h3 {
-  color: var(--accent-gold) !important;
+  color: var(--accent-cyan) !important;
 }
 
 .leadership-roster h3 {
@@ -520,7 +526,7 @@ h4 {
 
 .team-card i {
   font-size: 1.4rem;
-  color: var(--accent-gold);
+  color: var(--accent-cyan);
 }
 
 .team-card h4 {
@@ -548,7 +554,7 @@ h4 {
 
 .milestone-grid i {
   font-size: 2.5rem;
-  color: var(--accent-gold);
+  color: var(--accent-cyan);
   margin-bottom: 30px;
 }
 
@@ -580,7 +586,7 @@ h4 {
 }
 
 .pub-link:hover {
-  border-color: var(--accent-gold);
+  border-color: var(--accent-cyan);
   background: var(--bg-main);
 }
 
@@ -608,7 +614,7 @@ h4 {
   opacity: 0;
   transform: translateX(-10px);
   transition: var(--transition);
-  color: var(--accent-gold);
+  color: var(--accent-cyan);
 }
 
 .pub-link:hover .pub-title i {
@@ -620,7 +626,7 @@ h4 {
 .footer {
   background: var(--primary-navy);
   padding: 90px 0 40px 0;
-  border-top: 4px solid var(--accent-gold);
+  border-top: 4px solid var(--accent-cyan);
 }
 
 .footer-content {
@@ -668,7 +674,7 @@ h4 {
 }
 
 .footer-link:hover {
-  color: var(--accent-gold);
+  color: var(--accent-cyan);
 }
 
 .footer-bottom {
