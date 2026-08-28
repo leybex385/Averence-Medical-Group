@@ -94,4 +94,5 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => animateCounters(), 500); // trigger counter for hero section
 });
 
-document.querySelector('.mobile-toggle').addEventListener('click', () => { document.querySelector('.nav-links').classList.toggle('active'); });
+const mobileToggle = document.querySelector('.mobile-toggle'); if(mobileToggle) { mobileToggle.addEventListener('click', () => { const navLinks = document.querySelector('.nav-links'); if(navLinks) navLinks.classList.toggle('active'); }); }
+

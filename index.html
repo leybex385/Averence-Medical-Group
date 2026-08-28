@@ -48,7 +48,9 @@
                 <span class="logo-text">AVERENCE</span>
             </div>
             <nav class="nav-links">
+                
                 <a href="#about" class="active">About</a>
+                <a href="#products">Products</a>
                 <div class="nav-item has-dropdown">
                     <a href="#professional-focus" style="display: flex; align-items: center; gap: 5px;">Professional
                         Focus <i class="fas fa-chevron-down" style="font-size:0.7rem;"></i></a>
@@ -92,19 +94,21 @@
 
     <main>
         <!-- Hero Section -->
-        <section class="hero" id="home">
-            <div class="container hero-content">
-                <div class="hero-text">
-                    <p class="overtitle">AVERENCE MEDICAL GROUP</p>
-                    <h1 class="hero-title" data-text="Advancing Global Healthcare Infrastructure">
-                        Advancing Global<br><span>Healthcare Infrastructure</span></h1>
-                    <p class="hero-subtitle">We are a premier international medical sourcing and distribution firm,
-                        dedicated to equipping top-tier clinical institutions with reliable, high-performance healthcare
-                        technologies worldwide.</p>
-                </div>
-                <!-- Institutional Medical Corporate Building Hero Image -->
-                <div class="hero-image-wrapper">
-                    <img src="assets/hero.png" alt="Averence Medical Corporate Building" class="hero-image">
+                                                <section class="hero" id="home" style="position: relative; width: 100%; height: 90vh; overflow: hidden;">
+            <!-- Blurred Video Background -->
+            <video autoplay loop muted playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; filter: blur(3px); transform: scale(1.03); z-index: 0;">
+                <source src="assets/herovid.mp4" type="video/mp4">
+            </video>
+            <!-- Hero Gradient Overlay -->
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to top, rgba(5, 16, 26, 0.95) 0%, rgba(5, 16, 26, 0.4) 30%, transparent 100%); z-index: 1;"></div>
+            
+            <div class="container hero-content" style="position: relative; z-index: 2; width: 100%; height: 100%;">
+                <div class="hero-text" style="position: absolute; bottom: 40px; left: 4%; max-width: 800px;">
+                    <h1 class="hero-title" style="font-size: 3.2rem; font-weight: 700; line-height: 1.2; font-family: var(--font-heading); margin-bottom: 20px; color: #ffffff; text-shadow: 0 2px 8px rgba(0,0,0,0.95), 0 10px 40px rgba(0,0,0,0.8);">
+                        We excel in logistics that<br>shape the future of healthcare</h1>
+                    <p class="hero-subtitle" style="font-size: 1.15rem; font-weight: 400; color: rgba(255,255,255,0.95); margin-bottom: 0; max-width: 650px; text-shadow: 0 2px 6px rgba(0,0,0,0.95), 0 8px 30px rgba(0,0,0,0.8); line-height: 1.6;">
+                        Averence Medical Group is a premier international medical sourcing and distribution platform focused on equipping top-tier clinical institutions with reliable, high-performance healthcare technologies.
+                    </p>
                 </div>
             </div>
         </section>
@@ -156,6 +160,109 @@
                 </div>
                 <!-- Structural spacer to clear absolute overlap -->
                 <div style="height: 100px;"></div>
+            </div>
+        </section>
+
+        <!-- Product Catalog -->
+        <section class="products section-light" id="products" style="background-color: #ffffff; padding: 120px 0;">
+            <div class="container">
+                <div class="section-header" style="text-align: center; margin-bottom: 60px;">
+                    <h2 style="font-size: 2.8rem; color: var(--primary-navy); margin-bottom: 15px; font-family: var(--font-heading);">Advanced Medical Technology</h2>
+                    <p style="font-size: 1.15rem; color: var(--text-secondary); max-width: 600px; margin: 0 auto;">Reliable medical solutions for modern healthcare.</p>
+                </div>
+                
+                <div class="product-grid">
+                    <!-- Product 1 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span class="category-label">Imaging</span>
+                            <img src="assets/product_xray.png" alt="Digital X-Ray System">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Digital X-Ray System</h3>
+                            <p class="product-desc">Advanced digital imaging technology designed for fast and accurate diagnostic radiography.</p>
+                        </div>
+                    </div>
+                    <!-- Product 2 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span class="category-label">Tomography</span>
+                            <img src="assets/product_ct.png" alt="CT Scanner">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">CT Scanner</h3>
+                            <p class="product-desc">High-performance computed tomography system for detailed cross-sectional medical imaging.</p>
+                        </div>
+                    </div>
+                    <!-- Product 3 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span class="category-label">Magnetic Resonance</span>
+                            <img src="assets/product_mri.png" alt="MRI System">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">MRI System</h3>
+                            <p class="product-desc">Advanced magnetic resonance imaging technology for detailed, non-invasive diagnostic examinations.</p>
+                        </div>
+                    </div>
+                    <!-- Product 4 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span class="category-label">Sonography</span>
+                            <img src="assets/product_ultrasound.png" alt="Ultrasound System">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Ultrasound System</h3>
+                            <p class="product-desc">Modern diagnostic ultrasound equipment for real-time imaging across multiple clinical applications.</p>
+                        </div>
+                    </div>
+                    <!-- Product 5 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span class="category-label">Surgical Tech</span>
+                            <img src="assets/product_robot.png" alt="Robotic Surgical System">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Robotic-Assisted Surgical System</h3>
+                            <p class="product-desc">Advanced surgical technology designed to support precision and minimally invasive procedures.</p>
+                        </div>
+                    </div>
+                    <!-- Product 6 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span class="category-label">Neurology</span>
+                            <img src="assets/product_eeg.png" alt="EEG Monitoring System">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">EEG / Brain Monitoring System</h3>
+                            <p class="product-desc">Specialized equipment for monitoring and evaluating electrical brain activity.</p>
+                        </div>
+                    </div>
+                    <!-- Product 7 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span class="category-label">Vital Tracking</span>
+                            <img src="assets/product_monitor.png" alt="Patient Monitoring System">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Patient Monitoring System</h3>
+                            <p class="product-desc">Integrated monitoring technology for tracking essential patient vital signs in clinical environments.</p>
+                        </div>
+                    </div>
+                    <!-- Product 8 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span class="category-label">Diagnostics</span>
+                            <img src="assets/product_lab.png" alt="Laboratory Analyzer">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Laboratory Analyzer</h3>
+                            <p class="product-desc">Automated laboratory technology designed to support efficient and reliable diagnostic testing.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                
             </div>
         </section>
 
