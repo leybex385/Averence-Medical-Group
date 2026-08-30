@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Executive Profile - Averence Medical Group</title>
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Executive Profile - Averence Medical Group">
+    <meta property="og:description"
+        content="View the professional timeline and strategic contributions of our leadership team at Averence Medical Group.">
+    <meta property="og:image" content="assets/social-preview.png">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+
+    <style>
+        .profile-container {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 160px 5% 100px;
+            display: grid;
+            grid-template-columns: 450px 1fr;
+            gap: 80px;
+        }
+
+        .profile-visual {
+            position: relative;
+        }
+
+        .profile-image {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+            object-fit: cover;
+            aspect-ratio: 3/4;
+        }
+
+        .profile-info h1 {
+            font-size: 3rem;
+            color: var(--primary-navy);
+            margin-bottom: 10px;
+        }
+
+        .profile-info .title {
+            font-size: 1.25rem;
+            color: var(--accent-cyan);
+            font-weight: 600;
+            margin-bottom: 40px;
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .profile-section {
+            margin-bottom: 50px;
+        }
+
+        .profile-section h3 {
+            font-size: 1.5rem;
+            color: var(--primary-navy);
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--border-subtle);
+        }
+
+        .profile-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+        }
+
+        .profile-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 15px;
+        }
+
+        .profile-list li {
+            padding: 15px 20px;
+            background: #fff;
+            border-left: 3px solid var(--accent-cyan);
+            margin-bottom: 12px;
+            border-radius: 4px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            font-size: 1.05rem;
+            color: var(--primary-navy);
+        }
+
+        .profile-list i {
+            color: var(--accent-cyan);
+            margin-top: 5px;
+        }
+
+        .profile-highlight {
+            background: rgba(18, 48, 74, 0.03);
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 40px;
+        }
+
+        .profile-highlight h4 {
+            color: var(--primary-navy);
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 900px) {
+            .profile-container {
+                grid-template-columns: 1fr;
+                gap: 50px;
+            }
+
+            .profile-image {
+                aspect-ratio: 1;
+            }
+        }
+    </style>
+</head>
+
+<body style="display: none;">
+    <!-- Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-content">
+            <div class="logo">
+                <span class="logo-text">AVERENCE</span>
+            </div>
+                        <nav class="nav-links">
+                <a href="index.html#about">About</a>
+                <a href="index.html#products">Products</a>
+                <div class="nav-item has-dropdown">
+                    <a href="index.html#professional-focus" style="display: flex; align-items: center; gap: 5px;">Professional Focus <i class="fas fa-chevron-down" style="font-size:0.7rem;"></i></a>
+                    <!-- Mega Menu Dropdown -->
+                    <div class="mega-menu">
+                        <div class="mega-menu-col">
+                            <h3>CLINICAL SOURCING</h3>
+                            <ul>
+                                <li><a href="services.html#diagnostics">Advanced Diagnostics</a></li>
+                                <li><a href="services.html#consumables">Medical Consumables</a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-menu-col">
+                            <h3>CORPORATE LOGISTICS</h3>
+                            <ul>
+                                <li><a href="services.html#procurement">Global Procurement</a></li>
+                                <li><a href="services.html#cross-border">Cross-Border Trade</a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-menu-col">
+                            <h3>STRATEGIC ADVISORY</h3>
+                            <ul>
+                                <li><a href="services.html#compliance">Industry Compliance</a></li>
+                                <li><a href="services.html#expansion">Market Expansion</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-item simple-dropdown">
+                    <a href="index.html#case-studies" style="display: flex; align-items: center; gap: 5px;" class="case-studies-link">Case Studies <i class="fas fa-chevron-down" style="font-size:0.7rem;"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="index.html#case-studies">All Case Studies</a>
+                        <a href="case-study.html?id=leading-private-hospital" style="display: flex; justify-content: space-between; align-items: center;">Southeast Asia <i class="fas fa-angle-right" style="font-size: 0.8rem; color: var(--accent-cyan);"></i></a>
+                        <a href="case-study.html?id=university-medical-center" style="display: flex; justify-content: space-between; align-items: center;">Europe <i class="fas fa-angle-right" style="font-size: 0.8rem; color: var(--accent-cyan);"></i></a>
+                        <a href="case-study.html?id=specialized-neuroscience-hospital" style="display: flex; justify-content: space-between; align-items: center;">Middle East <i class="fas fa-angle-right" style="font-size: 0.8rem; color: var(--accent-cyan);"></i></a>
+                    </div>
+                </div>
+                <a href="index.html#leadership" class="active">Leadership</a>
+                <a href="index.html#recognition">Recognition</a>
+                <a href="index.html#compliance">Operations</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#contact" class="btn-primary">Contact</a>
+                <div class="mobile-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="profile-container fade-in-section">
+            <div class="profile-visual">
+                <div style="position: absolute; top: 120px; left: 5%; z-index: 10; margin-top: -100px;">
+                    <a href="index.html#leadership"
+                        style="color: var(--primary-navy); text-decoration: none; font-weight: 500; font-size: 0.9rem;"><i
+                            class="fas fa-arrow-left" style="margin-right: 10px;"></i> Back to Leadership</a>
+                </div>
+                <img src="" id="member-image" class="profile-image" alt="Executive Profile">
+            </div>
+
+            <div class="profile-info">
+                <h1 id="member-name">Name</h1>
+                <span class="title" id="member-title">Title</span>
+
+                <div class="profile-section">
+                    <h3>Professional Overview</h3>
+                    <p id="member-overview">Overview text placeholder.</p>
+                </div>
+
+                <div class="profile-section">
+                    <h3>Key Responsibilities</h3>
+                    <ul class="profile-list" id="member-responsibilities">
+                        <!-- Injected via JS -->
+                    </ul>
+                </div>
+
+                <div class="profile-highlight">
+                    <h4>Professional Focus</h4>
+                    <p id="member-focus" style="color: var(--primary-navy); font-weight: 500; margin-bottom: 25px;">
+                        Focus area.</p>
+
+                    <h4>Leadership & Contribution</h4>
+                    <p id="member-contribution" style="margin-bottom: 0;">Contribution description.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer style="background-color: var(--primary-navy); color: #fff; padding: 60px 0 30px;">
+        <!-- Wait, I can inject the real footer using JS or just leave a generic copyright -->
+        <div
+            style="max-width: 1200px; margin: 0 auto; text-align: center; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 30px;">
+            <p style="color: rgba(255,255,255,0.6); font-size: 0.9rem;">&copy; 2026 Averence Medical Group. All rights
+                reserved.</p>
+        </div>
+    </footer>
+
+    <script src="leadership.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            const memberId = params.get('id');
+            const data = typeof leadershipData !== 'undefined' ? leadershipData[memberId] : null;
+
+            if (data) {
+                document.title = data.name + " - Leadership";
+                document.getElementById('member-name').innerText = data.name;
+                document.getElementById('member-title').innerText = data.title;
+                document.getElementById('member-overview').innerText = data.overview;
+                document.getElementById('member-image').src = data.image;
+                document.getElementById('member-focus').innerText = data.focus;
+                document.getElementById('member-contribution').innerText = data.contribution;
+
+                const respHTML = data.responsibilities.map(r => `<li><i class="fas fa-check-circle"></i> ${r}</li>`).join('');
+                document.getElementById('member-responsibilities').innerHTML = respHTML;
+
+                document.body.style.display = 'block'; // Fade in
+            } else {
+                window.location.href = 'index.html#leadership';
+            }
+        });
+    </script>
+</body>
+
+</html>

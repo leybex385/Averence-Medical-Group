@@ -1,0 +1,76 @@
+        <!-- Educational Background & Leadership Narrative (Linked to #leadership) -->
+        <section class="experience section-dark" id="leadership">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Foundational Leadership</h2>
+                    <div class="header-line"></div>
+                </div>
+                
+                <div class="ceo-editorial-spread fade-in-section">
+                    <img src="ceo.jpg" alt="Harmony Ruby Koh, Founder & CEO" class="ceo-hero-image">
+                    <div class="ceo-content">
+                        <h3 class="ceo-title">Founder & CEO</h3>
+                        <h2 class="ceo-name">Harmony Ruby Koh</h2>
+                        
+                        <div class="ceo-bio-columns">
+                            <div>
+                                <p><strong>Professional Background:</strong> Harmony Ruby Koh’s philosophy is rooted in the convergence of high-level commerce and clinical efficacy. Recognizing the profound inefficiencies prevalent in international medical supply networks, she engineered Averence to function as a unified, uncompromising distribution conduit.</p>
+                                <p><strong>Strategic Vision:</strong> Her vision transcends basic procurement, focusing on equipping top-tier clinical institutions with reliable, high-performance healthcare technologies. This scalable strategy bridges global healthcare inequalities through direct institutional partnerships.</p>
+                            </div>
+                            <div>
+                                <p><strong>Leadership Philosophy:</strong> Driven by rigorous analytical processes and a commitment to healthcare progression, Harmony prioritizes sustainable, friction-free corporate integration above all else.</p>
+                                <p><strong>Approach to Technology:</strong> By securing exclusive access to advanced medical modalities, she ensures Averence remains at the vanguard of clinical logistics, fundamentally reshaping how global healthcare systems engage with new diagnostic frontiers.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-header" style="margin-top: 100px;">
+                    <h2>Leadership & Expertise</h2>
+                    <div class="header-line"></div>
+                    <p style="text-align: center; max-width: 700px; margin: 20px auto 0; font-size: 1.15rem; color: var(--text-secondary);">Meet the professionals guiding AVERENCE Medical Group’s vision, operations, and commitment to advancing healthcare technology.</p>
+                </div>
+
+                <div class="team-grid fade-in-section">
+                    <a href="member.html?id=marcus-vail" class="team-member-card">
+                        <img src="photo_2026-08-31_04-31-29.jpg" alt="Dr. Marcus Vail">
+                        <div class="team-member-info">
+                            <h4>Dr. Marcus Vail</h4>
+                            <h5>Chief Medical Officer</h5>
+                            <p>Ensures clinical hardware validation and safety protocols meet stringent modern standards.</p>
+                            <span class="view-profile">View Profile <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+                    
+                    <a href="member.html?id=sarah-chen" class="team-member-card">
+                        <img src="photo_2026-08-31_04-31-21.jpg" alt="Sarah Chen">
+                        <div class="team-member-info">
+                            <h4>Sarah Chen</h4>
+                            <h5>VP of Global Operations</h5>
+                            <p>Orchestrates complex international logistics and rapid cross-border distribution.</p>
+                            <span class="view-profile">View Profile <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+
+                    <a href="member.html?id=julian-smith" class="team-member-card">
+                        <img src="photo_2026-08-31_04-31-15.jpg" alt="Julian Smith">
+                        <div class="team-member-info">
+                            <h4>Julian Smith</h4>
+                            <h5>Dir. Strategic Partnerships</h5>
+                            <p>Spearheads B2B medical infrastructure contracts and government healthcare health alliances.</p>
+                            <span class="view-profile">View Profile <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+
+                    <a href="member.html?id=elara-voss" class="team-member-card">
+                        <img src="photo_2026-08-31_04-31-25.jpg" alt="Elara Voss">
+                        <div class="team-member-info">
+                            <h4>Elara Voss</h4>
+                            <h5>Head of Technical Compliance</h5>
+                            <p>Navigates regulatory clearance and international medical device compliance audits.</p>
+                            <span class="view-profile">View Profile <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
