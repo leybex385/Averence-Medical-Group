@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Averence Medical Group</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="products.js"></script>
+    <style>
+        .specs-table {
+            border-collapse: collapse;
+            width: 100%;
+            border: 1px solid var(--border-subtle);
+            background: white;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .specs-table th,
+        .specs-table td {
+            padding: 15px 20px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-subtle);
+            font-size: 0.95rem;
+        }
+
+        .specs-table th {
+            background: var(--bg-main);
+            color: var(--primary-navy);
+            font-weight: 600;
+            width: 35%;
+        }
+
+        .specs-table tr:last-child th,
+        .specs-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .feature-card {
+            background: #fff;
+            padding: 25px;
+            border-radius: 4px;
+            border-left: 3px solid var(--accent-cyan);
+            box-shadow: var(--shadow-subtle);
+        }
+
+        .app-item {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+        }
+    </style>
+</head>
+
+<body style="display: none;"> <!-- Hidden until JS loads it to prevent flicker -->
+    <!-- Header Placeholder -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-content">
+            <div class="logo">
+                <span class="logo-text">AVERENCE</span>
+            </div>
+                        <nav class="nav-links">
+                <a href="index.html#about">About</a>
+                <a href="index.html#products">Products</a>
+                <div class="nav-item has-dropdown">
+                    <a href="index.html#professional-focus" style="display: flex; align-items: center; gap: 5px;">Professional Focus <i class="fas fa-chevron-down" style="font-size:0.7rem;"></i></a>
+                    <!-- Mega Menu Dropdown -->
+                    <div class="mega-menu">
+                        <div class="mega-menu-col">
+                            <h3>CLINICAL SOURCING</h3>
+                            <ul>
+                                <li><a href="services.html#diagnostics">Advanced Diagnostics</a></li>
+                                <li><a href="services.html#consumables">Medical Consumables</a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-menu-col">
+                            <h3>CORPORATE LOGISTICS</h3>
+                            <ul>
+                                <li><a href="services.html#procurement">Global Procurement</a></li>
+                                <li><a href="services.html#cross-border">Cross-Border Trade</a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-menu-col">
+                            <h3>STRATEGIC ADVISORY</h3>
+                            <ul>
+                                <li><a href="services.html#compliance">Industry Compliance</a></li>
+                                <li><a href="services.html#expansion">Market Expansion</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-item simple-dropdown">
+                    <a href="index.html#case-studies" style="display: flex; align-items: center; gap: 5px;" class="case-studies-link">Case Studies <i class="fas fa-chevron-down" style="font-size:0.7rem;"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="index.html#case-studies">All Case Studies</a>
+                        <a href="case-study.html?id=leading-private-hospital" style="display: flex; justify-content: space-between; align-items: center;">Southeast Asia <i class="fas fa-angle-right" style="font-size: 0.8rem; color: var(--accent-cyan);"></i></a>
+                        <a href="case-study.html?id=university-medical-center" style="display: flex; justify-content: space-between; align-items: center;">Europe <i class="fas fa-angle-right" style="font-size: 0.8rem; color: var(--accent-cyan);"></i></a>
+                        <a href="case-study.html?id=specialized-neuroscience-hospital" style="display: flex; justify-content: space-between; align-items: center;">Middle East <i class="fas fa-angle-right" style="font-size: 0.8rem; color: var(--accent-cyan);"></i></a>
+                    </div>
+                </div>
+                <a href="index.html#leadership">Leadership</a>
+                <a href="index.html#recognition">Recognition</a>
+                <a href="index.html#compliance">Operations</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="index.html#contact" class="btn-primary">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <div style="height: 100px; background: #fff;"></div> <!-- Spacer for fixed header -->
+
+    <main>
+        <!-- Breadcrumb -->
+        <div style="background: var(--bg-main); border-bottom: 1px solid var(--border-subtle); padding: 15px 0;">
+            <div class="container"
+                style="font-size: 0.9rem; color: var(--text-secondary); font-family: var(--font-body);">
+                <a href="index.html" style="color: var(--accent-cyan); text-decoration: none;">Home</a>
+                <span style="margin: 0 10px;">/</span>
+                <a href="index.html#products" style="color: var(--accent-cyan); text-decoration: none;">Products</a>
+                <span style="margin: 0 10px;">/</span>
+                <span id="bc-name" style="color: var(--primary-navy); font-weight: 500;">...</span>
+            </div>
+        </div>
+
+        <!-- Product Hero -->
+        <section style="padding: 80px 0; background: #ffffff;">
+            <div class="container" style="display: flex; gap: 60px; flex-wrap: wrap; align-items: center;">
+                <div
+                    style="flex: 1; min-width: 300px; display: flex; justify-content: center; align-items: center; border-radius: 8px; ">
+                    <img id="detail-image" src="" alt="Product Image" style="max-width: 100%; object-fit: contain;">
+                </div>
+                <div style="flex: 1; min-width: 300px; display: flex; flex-direction: column; justify-content: center;">
+                    <span id="detail-category" class="category-label"
+                        style="position: static; display: inline-block; margin-bottom: 20px; align-self: flex-start; box-shadow: none;">Category</span>
+                    <h1 id="detail-name"
+                        style="font-size: 3.2rem; color: var(--primary-navy); margin-bottom: 25px; font-family: var(--font-heading);">
+                        Product Name</h1>
+                    <p id="detail-overview"
+                        style="font-size: 1.25rem; color: var(--primary-navy); margin-bottom: 40px; line-height: 1.6; font-family: var(--font-body); font-weight: 300;">
+                        Overview text goes here.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Details Details -->
+        <section class="section-light" style="padding: 100px 0; background: var(--bg-main);">
+            <div class="container" style="display: flex; gap: 80px; flex-wrap: wrap;">
+
+                <!-- Left: Desc & Features -->
+                <div style="flex: 1.5; min-width: 300px;">
+                    <h2
+                        style="font-size: 2.2rem; color: var(--primary-navy); margin-bottom: 30px; font-family: var(--font-heading);">
+                        Equipment Overview</h2>
+                    <p id="detail-description"
+                        style="font-size: 1.05rem; color: var(--text-secondary); line-height: 1.8; margin-bottom: 60px;">
+                    </p>
+
+                    <h2
+                        style="font-size: 2.2rem; color: var(--primary-navy); margin-bottom: 30px; font-family: var(--font-heading);">
+                        Key Capabilities</h2>
+                    <div id="features-grid"
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 60px;">
+                        <!-- JS Grid -->
+                    </div>
+                </div>
+
+                <!-- Right: Specs & Apps -->
+                <div style="flex: 1; min-width: 300px;">
+                    <h2
+                        style="font-size: 2.2rem; color: var(--primary-navy); margin-bottom: 30px; font-family: var(--font-heading);">
+                        Technical Data</h2>
+                    <table class="specs-table" id="specs-container" style="margin-bottom: 50px;">
+                        <!-- Rows generated via JS -->
+                    </table>
+
+                    <h2
+                        style="font-size: 2.2rem; color: var(--primary-navy); margin-bottom: 30px; font-family: var(--font-heading);">
+                        Clinical Applications</h2>
+                    <ul id="applications-list" style="list-style: none; padding: 0;">
+                        <!-- JS List -->
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <section
+            style="padding: 100px 0; text-align: center; background: #ffffff; border-top: 1px solid var(--border-subtle);">
+            <div class="container">
+                <h2
+                    style="font-size: 2.5rem; color: var(--primary-navy); margin-bottom: 25px; font-family: var(--font-heading);">
+                    Upgrade Your Clinical Infrastructure</h2>
+                <p
+                    style="font-size: 1.15rem; color: var(--text-secondary); margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Contact our corporate advisory team for comprehensive technical specifications, institutional
+                    pricing, and global logistics solutions.</p>
+                <a href="index.html#contact" class="btn-primary" style="padding: 18px 45px; font-size: 1.1rem; border-radius: 4px; display: inline-block; margin-top: 10px;">Contact Advisory Team</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <footer style="background-color: var(--primary-navy); color: #fff; padding: 60px 0 30px 0;">
+        <div class="container" style="text-align: center; font-size: 0.9rem; color: rgba(255,255,255,0.7);">
+            <p>&copy; 2026 Averence Medical Group. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            const productId = params.get('id');
+            const data = typeof productsData !== 'undefined' ? productsData[productId] : null;
+
+            if (data) {
+                document.title = data.name + " - Averence Medical Group";
+                document.getElementById('bc-name').innerText = data.name;
+                document.getElementById('detail-name').innerText = data.name;
+                document.getElementById('detail-category').innerText = data.category;
+                document.getElementById('detail-image').src = data.image;
+                document.getElementById('detail-image').alt = data.name;
+                document.getElementById('detail-overview').innerText = data.overview;
+                document.getElementById('detail-description').innerText = data.description;
+
+                // Specs
+                const specsHTML = Object.entries(data.specs).map(([key, value]) => `<tr><th>${key}</th><td>${value}</td></tr>`).join('');
+                document.getElementById('specs-container').innerHTML = specsHTML;
+
+                // Capabilities
+                const featsHTML = data.capabilities.map(cap => `<div class="feature-card"><i class="fas fa-microchip" style="color: var(--accent-cyan); font-size: 1.5rem; margin-bottom: 15px;"></i><p style="color: var(--primary-navy); font-weight: 500; font-size: 0.95rem;">${cap}</p></div>`).join('');
+                document.getElementById('features-grid').innerHTML = featsHTML;
+
+                // Applications
+                const appsHTML = data.applications.map(app => `<li class="app-item"><i class="fas fa-check" style="color: var(--accent-cyan);"></i> ${app}</li>`).join('');
+                document.getElementById('applications-list').innerHTML = appsHTML;
+
+                document.body.style.display = 'block'; // Fade in once loaded
+            } else {
+                window.location.href = 'index.html#products'; // Redirect if invalid
+            }
+        });
+    </script>
+</body>
+
+</html>

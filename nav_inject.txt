@@ -1,0 +1,43 @@
+            <nav class="nav-links">
+                <a href="index.html#about">About</a>
+                <a href="index.html#products">Products</a>
+                <div class="nav-item has-dropdown">
+                    <a href="index.html#professional-focus" style="display: flex; align-items: center; gap: 5px;">Professional Focus <i class="fas fa-chevron-down" style="font-size:0.7rem;"></i></a>
+                    <!-- Mega Menu Dropdown -->
+                    <div class="mega-menu">
+                        <div class="mega-menu-col">
+                            <h3>CLINICAL SOURCING</h3>
+                            <ul>
+                                <li><a href="services.html#diagnostics">Advanced Diagnostics</a></li>
+                                <li><a href="services.html#consumables">Medical Consumables</a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-menu-col">
+                            <h3>CORPORATE LOGISTICS</h3>
+                            <ul>
+                                <li><a href="services.html#procurement">Global Procurement</a></li>
+                                <li><a href="services.html#cross-border">Cross-Border Trade</a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-menu-col">
+                            <h3>STRATEGIC ADVISORY</h3>
+                            <ul>
+                                <li><a href="services.html#compliance">Industry Compliance</a></li>
+                                <li><a href="services.html#expansion">Market Expansion</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-item simple-dropdown">
+                    <a href="index.html#case-studies" style="display: flex; align-items: center; gap: 5px;" class="case-studies-link">Case Studies <i class="fas fa-chevron-down" style="font-size:0.7rem;"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="index.html#case-studies">All Case Studies</a>
+                        <a href="case-study.html?id=leading-private-hospital" style="display: flex; justify-content: space-between; align-items: center;">By Region <i class="fas fa-angle-right" style="font-size: 0.8rem; color: var(--accent-cyan);"></i></a>
+                        <a href="case-study.html?id=university-medical-center" style="display: flex; justify-content: space-between; align-items: center;">By Solution <i class="fas fa-angle-right" style="font-size: 0.8rem; color: var(--accent-cyan);"></i></a>
+                        <a href="case-study.html?id=specialized-neuroscience-hospital" style="display: flex; justify-content: space-between; align-items: center;">By Specialty <i class="fas fa-angle-right" style="font-size: 0.8rem; color: var(--accent-cyan);"></i></a>
+                    </div>
+                </div>
+                <a href="index.html#leadership">Leadership</a>
+                <a href="index.html#recognition">Recognition</a>
+                <a href="index.html#compliance">Operations</a>
+            </nav>

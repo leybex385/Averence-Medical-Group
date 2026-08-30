@@ -1,9 +1,30 @@
+
 document.addEventListener('DOMContentLoaded', () => {
+    // Intelligent Smooth Scrolling for Intra-Page Links
+    document.querySelectorAll('a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            if(!this.href) return;
+            try {
+                const url = new URL(this.href, window.location.href);
+                // If the link points to the exact same page path and contains a hash
+                if (url.pathname === window.location.pathname && url.hash) {
+                    const target = document.querySelector(url.hash);
+                    if (target) {
+                        e.preventDefault();
+                        target.scrollIntoView({ behavior: 'smooth' });
+                        history.pushState(null, null, url.hash);
+                    }
+                }
+            } catch(err) {
+                // Ignore invalid URLs
+            }
+        });
+    });
+
     // 1. Mobile Menu Toggle
     const mobileToggle = document.querySelector('.mobile-toggle');
     const navLinks = document.querySelector('.nav-links');
-    
-    mobileToggle.addEventListener('click', () => {
+    if(mobileToggle) mobileToggle.addEventListener('click', () => {
         if (navLinks.style.display === 'flex') {
             navLinks.style.display = 'none';
         } else {
@@ -96,3 +117,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const mobileToggle = document.querySelector('.mobile-toggle'); if(mobileToggle) { mobileToggle.addEventListener('click', () => { const navLinks = document.querySelector('.nav-links'); if(navLinks) navLinks.classList.toggle('active'); }); }
 
+
+// Cross-Page Anchor Failsafe
+window.addEventListener('load', () => {
+    if (window.location.hash) {
+        setTimeout(() => {
+            try {
+                const target = document.querySelector(window.location.hash);
+                if (target) {
+                    target.scrollIntoView({ behavior: 'auto' });
+                }
+            } catch(e) {}
+        }, 150); // Delay allows images and video to populate their natural vertical heights
+    }
+});

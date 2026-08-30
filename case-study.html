@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study - Averence Medical Group</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="case-studies.js"></script>
+    <style>
+        .hero-case::before { content: ""; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: var(--primary-navy); opacity: 0.85; z-index: 1; }
+        .hero-case {
+            background-color: var(--primary-navy);
+            color: #fff;
+            padding: 180px 0 160px;
+            position: relative;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .case-header-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .cs-tag {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 8px 16px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            color: var(--accent-cyan);
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 500;
+        }
+
+        .bc-nav {
+            position: absolute;
+            top: 140px;
+            left: 5%;
+            z-index: 10;
+        }
+
+        .bc-nav a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+
+        .bc-nav a:hover {
+            color: var(--accent-cyan);
+        }
+
+        .bc-nav span {
+            color: #fff;
+            font-size: 0.9rem;
+        }
+
+        .case-content-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 60px;
+            padding: 80px 0;
+        }
+
+        .case-image {
+            width: 100%;
+            height: 550px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 50px; 
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .cs-section {
+            margin-bottom: 50px; 
+        }
+
+        .cs-section h3 {
+            font-size: 1.8rem;
+            color: var(--primary-navy);
+            margin-bottom: 20px;
+            border-left: 4px solid var(--accent-cyan);
+            padding-left: 15px;
+        }
+
+        .cs-section p {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+
+        .cs-list {
+            list-style: none;
+        }
+
+        .cs-list li {
+            padding: 15px;
+            background: #fff;
+            border-left: 3px solid var(--accent-cyan);
+            margin-bottom: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+            font-weight: 500;
+        }
+
+        .cs-sidebar {
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+            height: fit-content;
+            position: sticky;
+            top: 120px;
+        }
+
+        .cs-sidebar h4 {
+            font-size: 1.3rem;
+            color: var(--primary-navy);
+            margin-bottom: 15px;
+            border-bottom: 1px solid var(--border-subtle);
+            padding-bottom: 15px;
+        }
+
+        .cs-sidebar-block {
+            margin-bottom: 30px;
+        }
+
+        .cs-sidebar-block label {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            color: var(--secondary-blue);
+            letter-spacing: 1px;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .cs-sidebar-block p {
+            font-size: 1.05rem;
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+
+        @media (max-width: 900px) {
+            .case-content-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cs-sidebar {
+                position: relative;
+                top: 0;
+            }
+        }
+    </style>
+</head>
+
+<body style="display: none;">
+    <!-- Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-content">
+            <div class="logo">
+                <span class="logo-text">AVERENCE</span>
+            </div>
+                        <nav class="nav-links">
+                <a href="index.html#about">About</a>
+                <a href="index.html#products">Products</a>
+                <div class="nav-item has-dropdown">
+                    <a href="index.html#professional-focus" style="display: flex; align-items: center; gap: 5px;">Professional Focus <i class="fas fa-chevron-down" style="font-size:0.7rem;"></i></a>
+                    <!-- Mega Menu Dropdown -->
+                    <div class="mega-menu">
+                        <div class="mega-menu-col">
+                            <h3>CLINICAL SOURCING</h3>
+                            <ul>
+                                <li><a href="services.html#diagnostics">Advanced Diagnostics</a></li>
+                                <li><a href="services.html#consumables">Medical Consumables</a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-menu-col">
+                            <h3>CORPORATE LOGISTICS</h3>
+                            <ul>
+                                <li><a href="services.html#procurement">Global Procurement</a></li>
+                                <li><a href="services.html#cross-border">Cross-Border Trade</a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-menu-col">
+                            <h3>STRATEGIC ADVISORY</h3>
+                            <ul>
+                                <li><a href="services.html#compliance">Industry Compliance</a></li>
+                                <li><a href="services.html#expansion">Market Expansion</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-item simple-dropdown">
+                    <a href="index.html#case-studies" style="display: flex; align-items: center; gap: 5px;" class="case-studies-link">Case Studies <i class="fas fa-chevron-down" style="font-size:0.7rem;"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="index.html#case-studies">All Case Studies</a>
+                        <a href="case-study.html?id=leading-private-hospital" style="display: flex; justify-content: space-between; align-items: center;">Southeast Asia <i class="fas fa-angle-right" style="font-size: 0.8rem; color: var(--accent-cyan);"></i></a>
+                        <a href="case-study.html?id=university-medical-center" style="display: flex; justify-content: space-between; align-items: center;">Europe <i class="fas fa-angle-right" style="font-size: 0.8rem; color: var(--accent-cyan);"></i></a>
+                        <a href="case-study.html?id=specialized-neuroscience-hospital" style="display: flex; justify-content: space-between; align-items: center;">Middle East <i class="fas fa-angle-right" style="font-size: 0.8rem; color: var(--accent-cyan);"></i></a>
+                    </div>
+                </div>
+                <a href="index.html#leadership">Leadership</a>
+                <a href="index.html#recognition">Recognition</a>
+                <a href="index.html#compliance">Operations</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="index.html#contact" class="btn-primary">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-case" id="cs-hero">
+            <div class="bc-nav">
+                <a href="index.html">Home</a> &nbsp;/&nbsp; <a href="index.html#case-studies" class="active">Case Studies</a>
+                &nbsp;/&nbsp; <span id="bc-name">Project</span>
+            </div>
+            <div class="case-header-content">
+                <span class="cs-tag" id="cs-region">Region</span>
+                <h1 style="font-size: 3.5rem; margin-bottom: 25px; color: #fff;" id="cs-title">Project Title</h1>
+                <p style="font-size: 1.25rem; color: rgba(255,255,255,0.8);" id="cs-overview">Overview text placeholder
+                </p>
+            </div>
+        </section>
+
+        <section class="container" >
+            
+
+            <div class="case-content-grid">
+                <div class="cs-main-body">
+                    <div class="cs-section">
+                        <h3>The Challenge</h3>
+                        <p id="cs-challenge">Challenge description goes here.</p>
+                    </div>
+
+                    <div class="cs-section">
+                        <h3>AVERENCE Approach</h3>
+                        <p id="cs-solution">Solution description goes here.</p>
+                        <br>
+                        <h4>Implementation Process</h4>
+                        <ul class="cs-list" id="cs-process" style="margin-top: 15px;">
+                            <!-- Processes injected here -->
+                        </ul>
+                    </div>
+
+                    <div class="cs-section">
+                        <h3>Technology Implemented</h3>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;"
+                            id="cs-technology">
+                            <!-- Tech injected here -->
+                        </div>
+                    </div>
+
+                    <div class="cs-section"
+                        style="background: var(--bg-alternate); padding: 40px; border-radius: 8px; border-left: 4px solid var(--primary-navy);">
+                        <h3 style="margin-top: 0; border: none; padding: 0;">Results / Impact</h3>
+                        <p id="cs-impact"
+                            style="margin-bottom: 0; font-size: 1.2rem; font-weight: 500; color: var(--primary-navy);">
+                            Impact statement goes here.</p>
+                    </div>
+                </div>
+
+                <aside class="cs-sidebar">
+                    <h4>Project Profile</h4>
+                    <div class="cs-sidebar-block">
+                        <label>Healthcare Institution</label>
+                        <p id="cs-institution">Institution Name</p>
+                    </div>
+                    <div class="cs-sidebar-block">
+                        <label>Location</label>
+                        <p id="cs-location">Region / Country</p>
+                    </div>
+                    <div class="cs-sidebar-block">
+                        <label>Medical Specialty</label>
+                        <p id="cs-specialty">Specialty Name</p>
+                    </div>
+                    <div class="cs-sidebar-block">
+                        <label>Related Medical Products</label>
+                        <ul style="padding-left: 20px; color: var(--text-secondary); margin-top: 10px;" id="cs-related">
+                            <!-- Related injected here -->
+                        </ul>
+                    </div>
+                    <a href="index.html#contact" class="btn-primary"
+                        style="display: block; text-align: center; margin-top: 40px; padding: 15px;">Discuss Your
+                        Healthcare Technology Needs</a>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <footer style="background-color: var(--primary-navy); color: #fff; padding: 60px 0 30px;"></footer>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            const csId = params.get('id');
+            const data = typeof caseStudiesData !== 'undefined' ? caseStudiesData[csId] : null;
+
+            if (data) {
+                document.title = data.title + " - Case Studies";
+                document.getElementById('bc-name').innerText = data.institution;
+                document.getElementById('cs-region').innerText = data.region;
+                document.getElementById('cs-title').innerText = data.title;
+                document.getElementById('cs-overview').innerText = data.overview;
+                document.getElementById('cs-hero').style.backgroundImage = 'url(' + data.image + ')';
+                document.getElementById('cs-challenge').innerText = data.challenge;
+                document.getElementById('cs-solution').innerText = data.solution;
+                document.getElementById('cs-impact').innerText = data.impact;
+                document.getElementById('cs-institution').innerText = data.institution;
+                document.getElementById('cs-location').innerText = data.region;
+                document.getElementById('cs-specialty').innerText = data.specialty;
+
+                // Process List
+                const processHTML = data.process.map(item => `<li><i class="fas fa-angle-right" style="color: var(--accent-cyan); margin-right: 10px;"></i> ${item}</li>`).join('');
+                document.getElementById('cs-process').innerHTML = processHTML;
+
+                // Technology List
+                const techHTML = data.technology.map(tech => `<div style="background: #fff; padding: 20px; border-radius: 6px; border: 1px solid var(--border-subtle);"><i class="fas fa-microchip" style="color: var(--accent-cyan); margin-bottom: 10px; font-size: 1.2rem;"></i><br><span style="font-weight: 500; color: var(--primary-navy);">${tech}</span></div>`).join('');
+                document.getElementById('cs-technology').innerHTML = techHTML;
+
+                // Related Products
+                const relatedHTML = data.related.map(rel => `<li style="margin-bottom: 5px;">${rel}</li>`).join('');
+                document.getElementById('cs-related').innerHTML = relatedHTML;
+
+                document.body.style.display = 'block'; // Fade in
+            } else {
+                window.location.href = 'index.html#case-studies';
+            }
+        });
+    </script>
+</body>
+
+</html>

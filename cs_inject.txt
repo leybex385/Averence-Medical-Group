@@ -1,0 +1,66 @@
+
+        <!-- Case Studies Portfolio -->
+        <section class="case-studies section-dark" id="case-studies" style="background-color: var(--primary-navy); padding: 120px 0;">
+            <div class="container fade-in-section">
+                <div class="section-title text-center" style="margin-bottom: 60px;">
+                    <h2 style="font-size: 2.8rem; color: #fff;">Global Healthcare Deployments</h2>
+                    <p style="font-size: 1.15rem; color: rgba(255, 255, 255, 0.7); max-width: 650px; margin: 0 auto;">Anonymized clinical infrastructure portfolios demonstrating our capability to deliver institutional-grade medical technology across international jurisdictions.</p>
+                </div>
+                
+                <div class="case-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;">
+                    <!-- Case Study 1 -->
+                    <div class="case-card" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; overflow: hidden; transition: all 0.4s ease; display: flex; flex-direction: column;">
+                        <a href="case-study.html?id=leading-private-hospital" style="text-decoration: none;">
+                            <div style="height: 240px; overflow: hidden;">
+                                <img src="assets/case_study_asia.png" alt="Leading Private Hospital Group" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease;">
+                            </div>
+                            <div style="padding: 30px; flex-grow: 1; display: flex; flex-direction: column; background-color: rgba(255, 255, 255, 0.01);">
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                                    <span style="color: var(--accent-cyan); font-size: 0.85rem; font-weight: 600; text-transform: uppercase;">Southeast Asia</span>
+                                    <span style="background: rgba(255,255,255,0.1); padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; color: #fff;">Imaging</span>
+                                </div>
+                                <h3 style="color: #fff; font-size: 1.4rem; margin-bottom: 15px; border-left: 3px solid var(--accent-cyan); padding-left: 12px;">Modernizing Diagnostic Imaging Infrastructure</h3>
+                                <p style="color: rgba(255,255,255,0.6); font-size: 0.95rem; margin-bottom: 25px; line-height: 1.6; flex-grow: 1;">A comprehensive modernization initiative deployed across a leading private healthcare network in Southeast Asia, aimed at transforming diagnostic capabilities.</p>
+                                <span class="btn-product" style="text-align: center; border-color: rgba(255,255,255,0.2); color: #fff; display: block;">Read Case Study &rarr;</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Case Study 2 -->
+                    <div class="case-card" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; overflow: hidden; transition: all 0.4s ease; display: flex; flex-direction: column;">
+                        <a href="case-study.html?id=university-medical-center" style="text-decoration: none;">
+                            <div style="height: 240px; overflow: hidden;">
+                                <img src="assets/case_study_europe.png" alt="University Medical Center" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease;">
+                            </div>
+                            <div style="padding: 30px; flex-grow: 1; display: flex; flex-direction: column; background-color: rgba(255, 255, 255, 0.01);">
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                                    <span style="color: var(--accent-cyan); font-size: 0.85rem; font-weight: 600; text-transform: uppercase;">Europe</span>
+                                    <span style="background: rgba(255,255,255,0.1); padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; color: #fff;">Monitoring</span>
+                                </div>
+                                <h3 style="color: #fff; font-size: 1.4rem; margin-bottom: 15px; border-left: 3px solid var(--accent-cyan); padding-left: 12px;">Establishing Connected Clinical Environments</h3>
+                                <p style="color: rgba(255,255,255,0.6); font-size: 0.95rem; margin-bottom: 25px; line-height: 1.6; flex-grow: 1;">An infrastructural upgrade for a prominent European University Medical Center, establishing an uninterrupted flow of patient vitals across departments.</p>
+                                <span class="btn-product" style="text-align: center; border-color: rgba(255,255,255,0.2); color: #fff; display: block;">Read Case Study &rarr;</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Case Study 3 -->
+                    <div class="case-card" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; overflow: hidden; transition: all 0.4s ease; display: flex; flex-direction: column;">
+                        <a href="case-study.html?id=specialized-neuroscience-hospital" style="text-decoration: none;">
+                            <div style="height: 240px; overflow: hidden;">
+                                <img src="assets/case_study_middle_east.png" alt="Specialized Neuroscience Hospital" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease;">
+                            </div>
+                            <div style="padding: 30px; flex-grow: 1; display: flex; flex-direction: column; background-color: rgba(255, 255, 255, 0.01);">
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                                    <span style="color: var(--accent-cyan); font-size: 0.85rem; font-weight: 600; text-transform: uppercase;">Middle East</span>
+                                    <span style="background: rgba(255,255,255,0.1); padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; color: #fff;">Neuro</span>
+                                </div>
+                                <h3 style="color: #fff; font-size: 1.4rem; margin-bottom: 15px; border-left: 3px solid var(--accent-cyan); padding-left: 12px;">Strengthening Neurological Assessments</h3>
+                                <p style="color: rgba(255,255,255,0.6); font-size: 0.95rem; margin-bottom: 25px; line-height: 1.6; flex-grow: 1;">A specialized deployment of premium neurological diagnostic technology within one of the Middle East's premier neuroscience institutes.</p>
+                                <span class="btn-product" style="text-align: center; border-color: rgba(255,255,255,0.2); color: #fff; display: block;">Read Case Study &rarr;</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>

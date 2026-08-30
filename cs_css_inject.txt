@@ -1,0 +1,21 @@
+
+/* Case Studies Portfolio Enhancements */
+.case-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--accent-cyan) !important;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+}
+.case-card:hover img {
+    transform: scale(1.05) !important;
+}
+.case-card:hover .btn-product {
+    background-color: var(--accent-cyan);
+    color: #fff !important;
+    border-color: var(--accent-cyan) !important;
+}
+
+@media (max-width: 900px) {
+    .case-grid {
+        grid-template-columns: 1fr !important;
+    }
+}

@@ -47,13 +47,11 @@
             <div class="logo">
                 <span class="logo-text">AVERENCE</span>
             </div>
-            <nav class="nav-links">
-                
-                <a href="#about" class="active">About</a>
-                <a href="#products">Products</a>
+                        <nav class="nav-links">
+                <a href="index.html#about">About</a>
+                <a href="index.html#products">Products</a>
                 <div class="nav-item has-dropdown">
-                    <a href="#professional-focus" style="display: flex; align-items: center; gap: 5px;">Professional
-                        Focus <i class="fas fa-chevron-down" style="font-size:0.7rem;"></i></a>
+                    <a href="index.html#professional-focus" style="display: flex; align-items: center; gap: 5px;">Professional Focus <i class="fas fa-chevron-down" style="font-size:0.7rem;"></i></a>
                     <!-- Mega Menu Dropdown -->
                     <div class="mega-menu">
                         <div class="mega-menu-col">
@@ -79,10 +77,20 @@
                         </div>
                     </div>
                 </div>
-                <a href="#leadership">Leadership</a>
-                <a href="#recognition">Recognition</a>
-                <a href="#compliance">Operations</a>
+                <div class="nav-item simple-dropdown">
+                    <a href="index.html#case-studies" style="display: flex; align-items: center; gap: 5px;" class="case-studies-link">Case Studies <i class="fas fa-chevron-down" style="font-size:0.7rem;"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="index.html#case-studies">All Case Studies</a>
+                        <a href="case-study.html?id=leading-private-hospital" style="display: flex; justify-content: space-between; align-items: center;">Southeast Asia <i class="fas fa-angle-right" style="font-size: 0.8rem; color: var(--accent-cyan);"></i></a>
+                        <a href="case-study.html?id=university-medical-center" style="display: flex; justify-content: space-between; align-items: center;">Europe <i class="fas fa-angle-right" style="font-size: 0.8rem; color: var(--accent-cyan);"></i></a>
+                        <a href="case-study.html?id=specialized-neuroscience-hospital" style="display: flex; justify-content: space-between; align-items: center;">Middle East <i class="fas fa-angle-right" style="font-size: 0.8rem; color: var(--accent-cyan);"></i></a>
+                    </div>
+                </div>
+                <a href="index.html#leadership">Leadership</a>
+                <a href="index.html#recognition">Recognition</a>
+                <a href="index.html#compliance">Operations</a>
             </nav>
+
             <div class="nav-actions">
                 <a href="#contact" class="btn-primary">Contact</a>
                 <div class="mobile-toggle">
@@ -173,7 +181,7 @@
                 
                 <div class="product-grid">
                     <!-- Product 1 -->
-                    <div class="product-card">
+                    <div class="product-card" style="cursor: pointer;" onclick="window.location.href='product.html?id=digital-xray-system'">
                         <div class="product-image">
                             <span class="category-label">Imaging</span>
                             <img src="assets/product_xray.png" alt="Digital X-Ray System">
@@ -181,10 +189,11 @@
                         <div class="product-info">
                             <h3 class="product-title">Digital X-Ray System</h3>
                             <p class="product-desc">Advanced digital imaging technology designed for fast and accurate diagnostic radiography.</p>
+                            <a href="product.html?id=digital-xray-system" class="btn-product">View Details</a>
                         </div>
                     </div>
                     <!-- Product 2 -->
-                    <div class="product-card">
+                    <div class="product-card" style="cursor: pointer;" onclick="window.location.href='product.html?id=ct-scanner'">
                         <div class="product-image">
                             <span class="category-label">Tomography</span>
                             <img src="assets/product_ct.png" alt="CT Scanner">
@@ -192,10 +201,11 @@
                         <div class="product-info">
                             <h3 class="product-title">CT Scanner</h3>
                             <p class="product-desc">High-performance computed tomography system for detailed cross-sectional medical imaging.</p>
+                            <a href="product.html?id=ct-scanner" class="btn-product">View Details</a>
                         </div>
                     </div>
                     <!-- Product 3 -->
-                    <div class="product-card">
+                    <div class="product-card" style="cursor: pointer;" onclick="window.location.href='product.html?id=mri-system'">
                         <div class="product-image">
                             <span class="category-label">Magnetic Resonance</span>
                             <img src="assets/product_mri.png" alt="MRI System">
@@ -203,10 +213,11 @@
                         <div class="product-info">
                             <h3 class="product-title">MRI System</h3>
                             <p class="product-desc">Advanced magnetic resonance imaging technology for detailed, non-invasive diagnostic examinations.</p>
+                            <a href="product.html?id=mri-system" class="btn-product">View Details</a>
                         </div>
                     </div>
                     <!-- Product 4 -->
-                    <div class="product-card">
+                    <div class="product-card" style="cursor: pointer;" onclick="window.location.href='product.html?id=ultrasound-system'">
                         <div class="product-image">
                             <span class="category-label">Sonography</span>
                             <img src="assets/product_ultrasound.png" alt="Ultrasound System">
@@ -214,10 +225,11 @@
                         <div class="product-info">
                             <h3 class="product-title">Ultrasound System</h3>
                             <p class="product-desc">Modern diagnostic ultrasound equipment for real-time imaging across multiple clinical applications.</p>
+                            <a href="product.html?id=ultrasound-system" class="btn-product">View Details</a>
                         </div>
                     </div>
                     <!-- Product 5 -->
-                    <div class="product-card">
+                    <div class="product-card" style="cursor: pointer;" onclick="window.location.href='product.html?id=robotic-surgical-system'">
                         <div class="product-image">
                             <span class="category-label">Surgical Tech</span>
                             <img src="assets/product_robot.png" alt="Robotic Surgical System">
@@ -225,10 +237,11 @@
                         <div class="product-info">
                             <h3 class="product-title">Robotic-Assisted Surgical System</h3>
                             <p class="product-desc">Advanced surgical technology designed to support precision and minimally invasive procedures.</p>
+                            <a href="product.html?id=robotic-surgical-system" class="btn-product">View Details</a>
                         </div>
                     </div>
                     <!-- Product 6 -->
-                    <div class="product-card">
+                    <div class="product-card" style="cursor: pointer;" onclick="window.location.href='product.html?id=eeg-monitoring-system'">
                         <div class="product-image">
                             <span class="category-label">Neurology</span>
                             <img src="assets/product_eeg.png" alt="EEG Monitoring System">
@@ -236,10 +249,11 @@
                         <div class="product-info">
                             <h3 class="product-title">EEG / Brain Monitoring System</h3>
                             <p class="product-desc">Specialized equipment for monitoring and evaluating electrical brain activity.</p>
+                            <a href="product.html?id=eeg-monitoring-system" class="btn-product">View Details</a>
                         </div>
                     </div>
                     <!-- Product 7 -->
-                    <div class="product-card">
+                    <div class="product-card" style="cursor: pointer;" onclick="window.location.href='product.html?id=patient-monitoring-system'">
                         <div class="product-image">
                             <span class="category-label">Vital Tracking</span>
                             <img src="assets/product_monitor.png" alt="Patient Monitoring System">
@@ -247,10 +261,11 @@
                         <div class="product-info">
                             <h3 class="product-title">Patient Monitoring System</h3>
                             <p class="product-desc">Integrated monitoring technology for tracking essential patient vital signs in clinical environments.</p>
+                            <a href="product.html?id=patient-monitoring-system" class="btn-product">View Details</a>
                         </div>
                     </div>
                     <!-- Product 8 -->
-                    <div class="product-card">
+                    <div class="product-card" style="cursor: pointer;" onclick="window.location.href='product.html?id=laboratory-analyzer'">
                         <div class="product-image">
                             <span class="category-label">Diagnostics</span>
                             <img src="assets/product_lab.png" alt="Laboratory Analyzer">
@@ -258,6 +273,7 @@
                         <div class="product-info">
                             <h3 class="product-title">Laboratory Analyzer</h3>
                             <p class="product-desc">Automated laboratory technology designed to support efficient and reliable diagnostic testing.</p>
+                            <a href="product.html?id=laboratory-analyzer" class="btn-product">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -267,6 +283,95 @@
         </section>
 
         <!-- Professional Focus (Linked to #professional-focus) -->
+
+
+
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+        <!-- Case Studies Portfolio -->
+        <section class="case-studies section-dark" id="case-studies" style="background-color: var(--primary-navy); padding: 120px 0;">
+            <div class="container fade-in-section">
+                <div class="section-title text-center" style="margin-bottom: 60px;">
+                    <h2 style="font-size: 2.8rem; color: #fff;">Global Healthcare Deployments</h2>
+                    <p style="font-size: 1.15rem; color: rgba(255, 255, 255, 0.7); max-width: 650px; margin: 0 auto;">Anonymized clinical infrastructure portfolios demonstrating our capability to deliver institutional-grade medical technology across international jurisdictions.</p>
+                </div>
+                
+                <div class="case-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;">
+                    <!-- Case Study 1 -->
+                    <div class="case-card" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; overflow: hidden; transition: all 0.4s ease; display: flex; flex-direction: column;">
+                        <a href="case-study.html?id=leading-private-hospital" style="text-decoration: none;">
+                            <div style="height: 240px; overflow: hidden;">
+                                <img src="assets/case_study_asia.png" alt="Leading Private Hospital Group" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease;">
+                            </div>
+                            <div style="padding: 30px; flex-grow: 1; display: flex; flex-direction: column; background-color: rgba(255, 255, 255, 0.01);">
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                                    <span style="color: var(--accent-cyan); font-size: 0.85rem; font-weight: 600; text-transform: uppercase;">Southeast Asia</span>
+                                    <span style="background: rgba(255,255,255,0.1); padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; color: #fff;">Imaging</span>
+                                </div>
+                                <h3 style="color: #fff; font-size: 1.4rem; margin-bottom: 15px; border-left: 3px solid var(--accent-cyan); padding-left: 12px;">Modernizing Diagnostic Imaging Infrastructure</h3>
+                                <p style="color: rgba(255,255,255,0.6); font-size: 0.95rem; margin-bottom: 25px; line-height: 1.6; flex-grow: 1;">A comprehensive modernization initiative deployed across a leading private healthcare network in Southeast Asia, aimed at transforming diagnostic capabilities.</p>
+                                <span class="btn-product" style="text-align: center; border-color: rgba(255,255,255,0.2); color: #fff; display: block;">Read Case Study &rarr;</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Case Study 2 -->
+                    <div class="case-card" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; overflow: hidden; transition: all 0.4s ease; display: flex; flex-direction: column;">
+                        <a href="case-study.html?id=university-medical-center" style="text-decoration: none;">
+                            <div style="height: 240px; overflow: hidden;">
+                                <img src="assets/case_study_europe.png" alt="University Medical Center" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease;">
+                            </div>
+                            <div style="padding: 30px; flex-grow: 1; display: flex; flex-direction: column; background-color: rgba(255, 255, 255, 0.01);">
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                                    <span style="color: var(--accent-cyan); font-size: 0.85rem; font-weight: 600; text-transform: uppercase;">Europe</span>
+                                    <span style="background: rgba(255,255,255,0.1); padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; color: #fff;">Monitoring</span>
+                                </div>
+                                <h3 style="color: #fff; font-size: 1.4rem; margin-bottom: 15px; border-left: 3px solid var(--accent-cyan); padding-left: 12px;">Establishing Connected Clinical Environments</h3>
+                                <p style="color: rgba(255,255,255,0.6); font-size: 0.95rem; margin-bottom: 25px; line-height: 1.6; flex-grow: 1;">An infrastructural upgrade for a prominent European University Medical Center, establishing an uninterrupted flow of patient vitals across departments.</p>
+                                <span class="btn-product" style="text-align: center; border-color: rgba(255,255,255,0.2); color: #fff; display: block;">Read Case Study &rarr;</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Case Study 3 -->
+                    <div class="case-card" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; overflow: hidden; transition: all 0.4s ease; display: flex; flex-direction: column;">
+                        <a href="case-study.html?id=specialized-neuroscience-hospital" style="text-decoration: none;">
+                            <div style="height: 240px; overflow: hidden;">
+                                <img src="assets/case_study_middle_east.png" alt="Specialized Neuroscience Hospital" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease;">
+                            </div>
+                            <div style="padding: 30px; flex-grow: 1; display: flex; flex-direction: column; background-color: rgba(255, 255, 255, 0.01);">
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                                    <span style="color: var(--accent-cyan); font-size: 0.85rem; font-weight: 600; text-transform: uppercase;">Middle East</span>
+                                    <span style="background: rgba(255,255,255,0.1); padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; color: #fff;">Neuro</span>
+                                </div>
+                                <h3 style="color: #fff; font-size: 1.4rem; margin-bottom: 15px; border-left: 3px solid var(--accent-cyan); padding-left: 12px;">Strengthening Neurological Assessments</h3>
+                                <p style="color: rgba(255,255,255,0.6); font-size: 0.95rem; margin-bottom: 25px; line-height: 1.6; flex-grow: 1;">A specialized deployment of premium neurological diagnostic technology within one of the Middle East's premier neuroscience institutes.</p>
+                                <span class="btn-product" style="text-align: center; border-color: rgba(255,255,255,0.2); color: #fff; display: block;">Read Case Study &rarr;</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="perspective section-dark" id="professional-focus"
             style="position: relative; padding: 120px 0; overflow: hidden; color: white;">
             <style>
