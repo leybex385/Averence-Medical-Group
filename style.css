@@ -1112,3 +1112,17 @@ h4 {
         display: none !important;
     }
 }
+/* Mobile Hero Fix */
+@media (max-width: 768px) {
+    .hero {
+        padding-top: 180px !important;
+        min-height: auto !important;
+        /* Allow the content to dictate height */
+        padding-bottom: 60px !important;
+    }
+
+    .hero h1 {
+        word-wrap: break-word;
+        /* Ensure natural wrapping on small screens */
+    }
+}
