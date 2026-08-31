@@ -1078,3 +1078,37 @@ h4 {
 .nav-item.simple-dropdown:hover .dropdown-right {
     transform: translateY(0);
 }
+/* Responsive About Section Fix */
+@media (max-width: 768px) {
+    .about-container {
+        display: flex !important;
+        flex-direction: column !important;
+        margin-top: 30px !important;
+    }
+
+    .about-image {
+        width: 100% !important;
+        height: auto !important;
+        position: relative !important;
+    }
+
+    .about-image img {
+        min-height: 250px;
+    }
+
+    .about-text-card {
+        position: relative !important;
+        right: auto !important;
+        bottom: auto !important;
+        width: 100% !important;
+        margin-top: -30px !important;
+        /* Slight overlap on mobile */
+        padding: 30px !important;
+        z-index: 10;
+    }
+
+    /* Structural spacer to clear absolute overlap */
+    .about-spacer {
+        display: none !important;
+    }
+}
