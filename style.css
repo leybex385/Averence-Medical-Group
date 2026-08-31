@@ -1063,3 +1063,18 @@ h4 {
 @media (max-width: 768px) {
     .team-grid { grid-template-columns: 1fr; }
 }
+/* Language Dropdown Mobile/Desktop */
+.lang-mobile { display: none !important; }
+@media (max-width: 1024px) {
+    .lang-desktop { display: none !important; }
+    .lang-mobile { display: block !important; }
+}
+.nav-item.simple-dropdown .dropdown-right {
+    left: auto;
+    right: 0;
+    transform: translateY(10px);
+    transform-origin: top right;
+}
+.nav-item.simple-dropdown:hover .dropdown-right {
+    transform: translateY(0);
+}
