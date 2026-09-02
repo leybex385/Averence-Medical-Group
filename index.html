@@ -21,6 +21,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
+        html,
+        body {
+            overflow-x: hidden;
+            width: 100%;
+        }
+
         /* Uncacheable Mobile Nav Overrides */
         .mobile-toggle {
             display: none !important;
@@ -579,6 +585,218 @@
             </div>
         </section>
 
+        <!-- Customer Testimonials -->
+        <section class="testimonials section-dark" id="testimonials"
+            style="padding: 100px 0; background-color: var(--primary-navy); overflow: hidden; position: relative;">
+            <style>
+                .testimonial-scroll-container {
+                    display: flex;
+                    overflow-x: auto;
+                    scroll-snap-type: x mandatory;
+                    gap: 30px;
+                    padding: 20px 5%;
+                    margin: 0 calc(-50vw + 50%);
+                    /* Full bleed on smaller screens */
+                    width: 100vw;
+                    -ms-overflow-style: none;
+                    /* IE and Edge */
+                    scrollbar-width: none;
+                    /* Firefox */
+                    cursor: grab;
+                }
+
+                .testimonial-scroll-container:active {
+                    cursor: grabbing;
+                }
+
+                .testimonial-scroll-container::-webkit-scrollbar {
+                    display: none;
+                }
+
+                .testimonial-card {
+                    scroll-snap-align: center;
+                    flex: 0 0 85%;
+                    max-width: 480px;
+                    background: #fff;
+                    border-radius: var(--border-radius);
+                    padding: 45px 35px;
+                    box-shadow: 0 10px 45px rgba(0, 0, 0, 0.03);
+                    border: 1px solid rgba(0, 0, 0, 0.04);
+                    display: flex;
+                    flex-direction: column;
+                    border-left: 4px solid var(--accent-cyan);
+                    transition: transform 0.3s ease;
+                }
+
+                .testimonial-card:hover {
+                    transform: translateY(-5px);
+                }
+
+                .review-text {
+                    font-size: 1.15rem;
+                    line-height: 1.7;
+                    color: var(--text-primary);
+                    flex-grow: 1;
+                    margin-bottom: 30px;
+                    font-style: italic;
+                    position: relative;
+                }
+
+                .review-text::before {
+                    content: "“";
+                    font-size: 3.5rem;
+                    color: rgba(0, 151, 167, 0.15);
+                    position: absolute;
+                    top: -20px;
+                    left: -15px;
+                    font-family: serif;
+                    line-height: 1;
+                }
+
+                .reviewer-info {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .reviewer-name {
+                    font-size: 1.1rem;
+                    font-weight: 600;
+                    color: var(--primary-navy);
+                    margin-bottom: 5px;
+                }
+
+                .reviewer-role {
+                    font-size: 0.9rem;
+                    color: var(--text-secondary);
+                    margin-bottom: 12px;
+                }
+
+                .reviewer-region {
+                    font-size: 0.75rem;
+                    font-weight: 700;
+                    color: var(--accent-cyan);
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                }
+
+                .scroll-indicator {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 30px;
+                    gap: 15px;
+                    color: rgba(255, 255, 255, 0.6);
+                    font-size: 0.9rem;
+                }
+
+                @media(min-width: 768px) {
+                    .testimonial-card {
+                        flex: 0 0 50%;
+                    }
+                }
+
+                @media(min-width: 1024px) {
+                    .testimonial-scroll-container {
+                        padding: 20px 0;
+                        margin: 0;
+                        width: 100%;
+                    }
+
+                    .testimonial-card {
+                        flex: 0 0 calc(33.333% - 20px);
+                        scroll-snap-align: start;
+                    }
+                }
+            </style>
+            <div class="container fade-in-section">
+                <div class="section-title text-center" style="margin-bottom: 50px;">
+                    <h2 style="font-size: 2.8rem; color: #fff;">Institutional Feedback</h2>
+                    <div class="header-line" style="margin: 0 auto 20px auto; background-color: #fff;"></div>
+                    <p style="font-size: 1.15rem; color: rgba(255, 255, 255, 0.7); max-width: 650px; margin: 0 auto;">
+                        Evaluations and testimonials from medical directors, hospital procurement leaders, and clinical
+                        professionals partnering with Averence universally.</p>
+                </div>
+
+                <div class="testimonial-scroll-container">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card">
+                        <p class="review-text">The integration of Averence's advanced diagnostic imaging platforms
+                            completely revolutionized our patient triage capability. The logistical precision and
+                            post-deployment support were unparalleled, setting a new standard for clinical
+                            infrastructural deployment.</p>
+                        <div class="reviewer-info">
+                            <span class="reviewer-name">Dr. Wei Chen</span>
+                            <span class="reviewer-role">Chief of Radiology, Metropolitan General Hospital</span>
+                            <span class="reviewer-region">Southeast Asia</span>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card">
+                        <p class="review-text">Achieving a connected clinical environment required a partner who
+                            understood both high-level technology and seamless deployment execution. Averence handled
+                            our infrastructural upgrade flawlessly, bridging departmental care with unmatched
+                            professionalism.</p>
+                        <div class="reviewer-info">
+                            <span class="reviewer-name">Prof. Elena Rostova</span>
+                            <span class="reviewer-role">Director of Clinical Operations, EuroMed Medical Center</span>
+                            <span class="reviewer-region">Europe</span>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-card">
+                        <p class="review-text">The neurological diagnostic systems provided by Averence allowed us to
+                            establish unprecedented precision in our assessments. Their dedicated advisory team expertly
+                            steered us through complex multi-national compliance hurdles with zero friction.</p>
+                        <div class="reviewer-info">
+                            <span class="reviewer-name">Dr. Tariq Al-Fayed</span>
+                            <span class="reviewer-role">Head of Neurological ICU, King Faisal Specialist Hosp.</span>
+                            <span class="reviewer-region">Middle East</span>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 4 -->
+                    <div class="testimonial-card">
+                        <p class="review-text">Upgrading our surgical automation was a monumental undertaking, but the
+                            specialized robotic procurement handled by Averence proved to be the absolute gold standard
+                            in cross-border clinical trade. Reliable, communicative, and flawless.</p>
+                        <div class="reviewer-info">
+                            <span class="reviewer-name">Dr. Sarah Jenkins</span>
+                            <span class="reviewer-role">Chief Surgeon, Pacific Medical Hub</span>
+                            <span class="reviewer-region">North America</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scroll-indicator">
+                    <button id="testi-prev" aria-label="Previous Testimonial"
+                        style="background:none;border:none;color:inherit;cursor:pointer;font-size:1.2rem;padding:15px;display:flex;align-items:center;justify-content:center;transition:color 0.3s;"
+                        onmouseover="this.style.color='#fff'" onmouseout="this.style.color=''">
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+                    <span style="user-select:none;">Swipe to navigate</span>
+                    <button id="testi-next" aria-label="Next Testimonial"
+                        style="background:none;border:none;color:inherit;cursor:pointer;font-size:1.2rem;padding:15px;display:flex;align-items:center;justify-content:center;transition:color 0.3s;"
+                        onmouseover="this.style.color='#fff'" onmouseout="this.style.color=''">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+                <script>
+                    document.getElementById('testi-prev').addEventListener('click', function () {
+                        const container = document.querySelector('.testimonial-scroll-container');
+                        const cardWidth = container.querySelector('.testimonial-card').offsetWidth + 30; // 30 is the gap
+                        container.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+                    });
+                    document.getElementById('testi-next').addEventListener('click', function () {
+                        const container = document.querySelector('.testimonial-scroll-container');
+                        const cardWidth = container.querySelector('.testimonial-card').offsetWidth + 30;
+                        container.scrollBy({ left: cardWidth, behavior: 'smooth' });
+                    });
+                </script>
+            </div>
+        </section>
+
         <section class="perspective section-dark" id="professional-focus"
             style="position: relative; padding: 120px 0; overflow: hidden; color: white;">
             <style>
@@ -590,6 +808,13 @@
 
                 #professional-focus .header-line {
                     background-color: white !important;
+                }
+
+                @media (max-width: 768px) {
+                    #professional-focus .tech-stack-container {
+                        grid-template-columns: 1fr !important;
+                        gap: 20px !important;
+                    }
                 }
             </style>
             <!-- Abstract technology connection video from reliable Mixkit stock source -->
@@ -845,33 +1070,32 @@
             <div class="footer-col brand-col">
                 <span class="logo-text">AVERENCE</span>
                 <p>Innovative cross-border trade in medical technology.</p>
-            </div>
-            <div class="footer-col">
-                <h4>Contact Us</h4>
-                <p style="margin-bottom: 15px; font-size: 0.95rem;">We invite potential clients and business partners to
-                    reach out for consultations and strategic collaborations.</p>
-                <a href="mailto:contact@averencemedical.com" class="footer-link"
-                    style="display: block; margin-bottom: 15px;">contact@averencemedical.com</a>
-                <a href="https://maps.google.com/?q=1+Vanderbilt+Ave,+New+York,+NY+10017,+United+States" target="_blank"
-                    class="footer-link" style="display: block; margin-bottom: 10px; font-size: 0.9rem;">
-                    <i class="fas fa-map-marker-alt" style="margin-right: 8px; color: var(--accent-cyan);"></i>1
-                    Vanderbilt Ave, New York, NY 10017, United States
-                </a>
-                <a href="tel:+16462794206" class="footer-link"
-                    style="display: block; margin-bottom: 15px; font-size: 0.9rem;">
-                    <i class="fas fa-phone-alt" style="margin-right: 8px; color: var(--accent-cyan);"></i>+1 (646)
-                    279-4206
-                </a>
                 <p class="locations"
-                    style="margin-top: 15px; padding-top: 15px; border-top: 1px solid rgba(255,255,255,0.1);">Global
+                    style="margin-top: 25px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1);">Global
                     Logistics Hubs in Major Commercial Centers</p>
                 <div class="map-embed"
-                    style="margin-top: 25px; width: 100%; border-radius: 8px; overflow: hidden; height: 180px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+                    style="margin-top: 15px; width: 100%; max-width: 400px; border-radius: 8px; overflow: hidden; height: 180px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.3725514695026!2d-73.98064958459384!3d40.75384667932731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259005a3059eb%3A0x86134ba1b7e4f16b!2s1%20Vanderbilt%20Ave%2C%20New%20York%2C%20NY%2010017!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
                         width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p style="margin-bottom: 15px; font-size: 0.95rem;">We invite potential clients and business partners to
+                    reach out for consultations and strategic collaborations.</p>
+                <span
+                    style="display: block; margin-bottom: 15px; color: rgba(255,255,255,0.7);">contact@averencemedical.com</span>
+                <a href="https://maps.google.com/?q=1+Vanderbilt+Ave,+New+York,+NY+10017,+United+States" target="_blank"
+                    class="footer-link" style="display: block; margin-bottom: 10px; font-size: 0.9rem;">
+                    <i class="fas fa-map-marker-alt" style="margin-right: 8px; color: var(--accent-cyan);"></i>1
+                    Vanderbilt Ave, New York, NY 10017, United States
+                </a>
+                <span style="display: block; margin-bottom: 15px; font-size: 0.9rem; color: rgba(255,255,255,0.7);">
+                    <i class="fas fa-phone-alt" style="margin-right: 8px; color: var(--accent-cyan);"></i>+1 (646)
+                    279-4206
+                </span>
             </div>
             <div class="footer-col">
                 <h4>Legal</h4>

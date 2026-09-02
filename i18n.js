@@ -1438,7 +1438,26 @@ Object.assign(staticTranslations, {
     "Precise, rapid, and reliable diagnostic testing": "精准、快速且可靠的诊断测试",
     "Intelligent LIS integration for central labs": "适用于中心实验室的智能 LIS 集成",
     "Averence Medical Group specializes in the international sourcing, import, export, and distribution of medical equipment. We are committed to bringing high-quality medical equipment from trusted global suppliers to healthcare markets worldwide, providing healthcare institutions and professional partners with reliable products and efficient procurement services.": "Averence Medical Group 专注于医疗设备的国际采购、进出口及分销。我们致力于将全球值得信赖的供应商提供的高品质医疗设备引入全球医疗市场，为医疗机构和专业合作伙伴提供可靠的产品和高效的采购服务。",
-    "Backed by our professional international supply chain capabilities, we also coordinate the cross-border transportation and import processes for medical equipment. We develop tailored solutions to meet the customs, regulatory, and import requirements of different countries, ensuring that products are delivered safely, compliantly, and efficiently to our customers.": "依托我们专业的国际供应链能力，我们同时协调医疗设备的跨境运输和进口流程。我们制定量身定制的解决方案，以满足不同国家的海关、监管和进口要求，确保产品安全、合规、高效地交付给我们的客户。"
+    "Backed by our professional international supply chain capabilities, we also coordinate the cross-border transportation and import processes for medical equipment. We develop tailored solutions to meet the customs, regulatory, and import requirements of different countries, ensuring that products are delivered safely, compliantly, and efficiently to our customers.": "依托我们专业的国际供应链能力，我们同时协调医疗设备的跨境运输和进口流程。我们制定量身定制的解决方案，以满足不同国家的海关、监管和进口要求，确保产品安全、合规、高效地交付给我们的客户。",
+    "Institutional Feedback": "机构反馈",
+    "Evaluations and testimonials from medical directors, hospital procurement leaders, and clinical professionals partnering with Averence universally.": "来自全球范围内与 Averence 合作的医疗总监、医院采购领导和临床专业人员的评估与反馈。",
+    "The integration of Averence's advanced diagnostic imaging platforms completely revolutionized our patient triage capability. The logistical precision and post-deployment support were unparalleled, setting a new standard for clinical infrastructural deployment.": "Averence 先进诊断成像平台的整合彻底改变了我们的患者分诊能力。其后勤精准度和部署后支持是无与伦比的，为临床基础设施部署树立了新标准。",
+    "Dr. Wei Chen": "陈伟博士",
+    "Chief of Radiology, Metropolitan General Hospital": "大都会综合医院放射科主任",
+    "Southeast Asia": "东南亚",
+    "Achieving a connected clinical environment required a partner who understood both high-level technology and seamless deployment execution. Averence handled our infrastructural upgrade flawlessly, bridging departmental care with unmatched professionalism.": "实现互联的临床环境需要一个既了解高层技术又懂得无缝部署执行的合作伙伴。Averence 完美地处理了我们的基础设施升级，以无与伦比的专业精神连接了各科室的护理工作。",
+    "Prof. Elena Rostova": "Elena Rostova 教授",
+    "Director of Clinical Operations, EuroMed Medical Center": "欧洲医疗中心临床运营总监",
+    "Europe": "欧洲",
+    "The neurological diagnostic systems provided by Averence allowed us to establish unprecedented precision in our assessments. Their dedicated advisory team expertly steered us through complex multi-national compliance hurdles with zero friction.": "Averence 提供的神经诊断系统使我们在评估中建立了前所未有的精准度。他们的专属顾问团队专业地引导我们顺利克服了复杂跨国合规障碍，毫无摩擦。",
+    "Dr. Tariq Al-Fayed": "Tariq Al-Fayed 博士",
+    "Head of Neurological ICU, King Faisal Specialist Hosp.": "费萨尔国王专科医院神经重症监护室主任",
+    "Middle East": "中东",
+    "Upgrading our surgical automation was a monumental undertaking, but the specialized robotic procurement handled by Averence proved to be the absolute gold standard in cross-border clinical trade. Reliable, communicative, and flawless.": "升级我们的手术自动化是一项巨大的工程，但 Averence 处理的专业机器人采购被证明是跨境临床贸易的绝对黄金标准。可靠、善于沟通且完美无瑕。",
+    "Dr. Sarah Jenkins": "Sarah Jenkins 博士",
+    "Chief Surgeon, Pacific Medical Hub": "太平洋医疗中心首席外科医生",
+    "North America": "北美洲",
+    "Swipe to navigate": "滑动以导航"
 });
 
 Object.assign(staticTranslationsES, {
@@ -1475,7 +1494,26 @@ Object.assign(staticTranslationsES, {
     "Ruggedized, continuous telemetry across wards": "Telemetría robusta y continua en todas las salas",
     "High-throughput processing, automated handling": "Procesamiento de alto rendimiento, manejo automatizado",
     "Precise, rapid, and reliable diagnostic testing": "Pruebas diagnósticas precisas, rápidas y confiables",
-    "Intelligent LIS integration for central labs": "Integración LIS inteligente para laboratorios centrales"
+    "Intelligent LIS integration for central labs": "Integración LIS inteligente para laboratorios centrales",
+    "Institutional Feedback": "Comentarios Institucionales",
+    "Evaluations and testimonials from medical directors, hospital procurement leaders, and clinical professionals partnering with Averence universally.": "Evaluaciones y testimonios de directores médicos, líderes de adquisiciones hospitalarias y profesionales clínicos que se asocian con Averence a nivel mundial.",
+    "The integration of Averence's advanced diagnostic imaging platforms completely revolutionized our patient triage capability. The logistical precision and post-deployment support were unparalleled, setting a new standard for clinical infrastructural deployment.": "La integración de las plataformas avanzadas de diagnóstico por imágenes de Averence revolucionó por completo nuestra capacidad de triaje de pacientes. La precisión logística y el apoyo posterior al despliegue fueron incomparables, estableciendo un nuevo estándar para el despliegue de infraestructura clínica.",
+    "Dr. Wei Chen": "Dr. Wei Chen",
+    "Chief of Radiology, Metropolitan General Hospital": "Jefe de Radiología, Hospital General Metropolitano",
+    "Southeast Asia": "Sudeste Asiático",
+    "Achieving a connected clinical environment required a partner who understood both high-level technology and seamless deployment execution. Averence handled our infrastructural upgrade flawlessly, bridging departmental care with unmatched professionalism.": "Lograr un entorno clínico conectado requería un socio que comprendiera tanto la tecnología de alto nivel como la ejecución de despliegues efectivos e ininterrumpidos. Averence manejó nuestra actualización de infraestructura a la perfección, uniendo la atención departamental con un profesionalismo inigualable.",
+    "Prof. Elena Rostova": "Prof. Elena Rostova",
+    "Director of Clinical Operations, EuroMed Medical Center": "Directora de Operaciones Clínicas, Centro Médico EuroMed",
+    "Europe": "Europa",
+    "The neurological diagnostic systems provided by Averence allowed us to establish unprecedented precision in our assessments. Their dedicated advisory team expertly steered us through complex multi-national compliance hurdles with zero friction.": "Los sistemas de diagnóstico neurológico proporcionados por Averence nos permitieron establecer una precisión sin precedentes en nuestras evaluaciones. Su dedicado equipo de asesoría nos guio de manera experta a través de los complejos obstáculos de cumplimiento multinacional sin ninguna fricción.",
+    "Dr. Tariq Al-Fayed": "Dr. Tariq Al-Fayed",
+    "Head of Neurological ICU, King Faisal Specialist Hosp.": "Jefe de UCI Neurológica, Hospital Especialidad Rey Faisal",
+    "Middle East": "Medio Oriente",
+    "Upgrading our surgical automation was a monumental undertaking, but the specialized robotic procurement handled by Averence proved to be the absolute gold standard in cross-border clinical trade. Reliable, communicative, and flawless.": "La actualización de nuestra automatización quirúrgica fue una empresa monumental, pero la adquisición robótica especializada manejada por Averence demostró ser el máximo estándar de oro absoluto en el comercio clínico transfronterizo. Confiable, comunicativo y perfecto.",
+    "Dr. Sarah Jenkins": "Dr. Sarah Jenkins",
+    "Chief Surgeon, Pacific Medical Hub": "Cirujana en Jefe, Hub Médico del Pacífico",
+    "North America": "América del Norte",
+    "Swipe to navigate": "Desliza para navegar"
 });
 
 Object.assign(staticTranslationsFR, {
@@ -1512,7 +1550,26 @@ Object.assign(staticTranslationsFR, {
     "Ruggedized, continuous telemetry across wards": "Télémétrie robuste et continue dans tous les services",
     "High-throughput processing, automated handling": "Traitement à haut débit, manipulation automatisée",
     "Precise, rapid, and reliable diagnostic testing": "Tests de diagnostic précis, rapides et fiables",
-    "Intelligent LIS integration for central labs": "Intégration intelligente du SIL pour les laboratoires centraux"
+    "Intelligent LIS integration for central labs": "Intégration intelligente du SIL pour les laboratoires centraux",
+    "Institutional Feedback": "Retours Institutionnels",
+    "Evaluations and testimonials from medical directors, hospital procurement leaders, and clinical professionals partnering with Averence universally.": "Évaluations et témoignages de directeurs médicaux, de responsables des achats hospitaliers et de professionnels cliniques en partenariat avec Averence à travers le monde.",
+    "The integration of Averence's advanced diagnostic imaging platforms completely revolutionized our patient triage capability. The logistical precision and post-deployment support were unparalleled, setting a new standard for clinical infrastructural deployment.": "L'intégration des plates-formes d'imagerie diagnostique avancées d'Averence a complètement révolutionné notre capacité de triage des patients. La précision logistique et le soutien post-déploiement étaient sans précédent, établissant une nouvelle norme pour le déploiement des infrastructures cliniques.",
+    "Dr. Wei Chen": "Dr. Wei Chen",
+    "Chief of Radiology, Metropolitan General Hospital": "Chef du Service de Radiologie, Hôpital Général Métropolitain",
+    "Southeast Asia": "Asie du Sud-Est",
+    "Achieving a connected clinical environment required a partner who understood both high-level technology and seamless deployment execution. Averence handled our infrastructural upgrade flawlessly, bridging departmental care with unmatched professionalism.": "La réalisation d'un environnement clinique connecté exigeait un partenaire comprenant à la fois la technologie de haut niveau et l'exécution transparente du déploiement. Averence a parfaitement géré notre mise à niveau infrastructurelle, reliant les soins départementaux avec un professionnalisme inégalé.",
+    "Prof. Elena Rostova": "Prof. Elena Rostova",
+    "Director of Clinical Operations, EuroMed Medical Center": "Directrice des Opérations Cliniques, Centre Médical EuroMed",
+    "Europe": "Europe",
+    "The neurological diagnostic systems provided by Averence allowed us to establish unprecedented precision in our assessments. Their dedicated advisory team expertly steered us through complex multi-national compliance hurdles with zero friction.": "Les systèmes de diagnostic neurologique fournis par Averence nous ont permis d'établir une précision sans précédent dans nos évaluations. Leur équipe consultative dévouée nous a guidés de manière experte à travers les obstacles complexes de conformité multinationale, sans la moindre friction.",
+    "Dr. Tariq Al-Fayed": "Dr. Tariq Al-Fayed",
+    "Head of Neurological ICU, King Faisal Specialist Hosp.": "Chef de l'USI Neurologique, Hôpital Spécialisé Roi Fayçal",
+    "Middle East": "Moyen-Orient",
+    "Upgrading our surgical automation was a monumental undertaking, but the specialized robotic procurement handled by Averence proved to be the absolute gold standard in cross-border clinical trade. Reliable, communicative, and flawless.": "La modernisation de notre automatisation chirurgicale a été une entreprise monumentale, mais l'approvisionnement en robotique spécialisée géré par Averence s'est avéré être la référence absolue du commerce clinique transfrontalier. Fiable, communicatif et irréprochable.",
+    "Dr. Sarah Jenkins": "Dr. Sarah Jenkins",
+    "Chief Surgeon, Pacific Medical Hub": "Chirurgienne en Chef, Pacific Medical Hub",
+    "North America": "Amérique du Nord",
+    "Swipe to navigate": "Glissez pour naviguer"
 });
 
 Object.assign(staticTranslationsDE, {
@@ -1549,5 +1606,24 @@ Object.assign(staticTranslationsDE, {
     "Ruggedized, continuous telemetry across wards": "Robuste, kontinuierliche Telemetrie über Stationen hinweg",
     "High-throughput processing, automated handling": "Hochdurchsatz-Verarbeitung, automatisiertes Handling",
     "Precise, rapid, and reliable diagnostic testing": "Präzise, schnelle und zuverlässige Diagnosetests",
-    "Intelligent LIS integration for central labs": "Intelligente LIS-Integration für Zentrallabore"
+    "Intelligent LIS integration for central labs": "Intelligente LIS-Integration für Zentrallabore",
+    "Institutional Feedback": "Institutionelles Feedback",
+    "Evaluations and testimonials from medical directors, hospital procurement leaders, and clinical professionals partnering with Averence universally.": "Bewertungen und Erfahrungsberichte von ärztlichen Direktoren, Leitern des Krankenhausbeschaffungswesens und klinischen Fachkräften, die weltweit mit Averence zusammenarbeiten.",
+    "The integration of Averence's advanced diagnostic imaging platforms completely revolutionized our patient triage capability. The logistical precision and post-deployment support were unparalleled, setting a new standard for clinical infrastructural deployment.": "Die Integration der fortschrittlichen diagnostischen Bildgebungsplattformen von Averence hat unsere Patienten-Triage-Fähigkeit komplett revolutioniert. Die logistische Präzision und der Support nach dem Einsatz waren beispiellos und setzen einen neuen Maßstab für den Einsatz klinischer Infrastruktur.",
+    "Dr. Wei Chen": "Dr. Wei Chen",
+    "Chief of Radiology, Metropolitan General Hospital": "Chefarzt der Radiologie, Metropolitan General Hospital",
+    "Southeast Asia": "Südostasien",
+    "Achieving a connected clinical environment required a partner who understood both high-level technology and seamless deployment execution. Averence handled our infrastructural upgrade flawlessly, bridging departmental care with unmatched professionalism.": "Das Erreichen einer vernetzten klinischen Umgebung erforderte einen Partner, der sowohl hochmoderne Technologie als auch nahtlose Einsatzdurchführung verstand. Averence führte unsere infrastrukturelle Aufrüstung fehlerfrei durch und überbrückte die abteilungsübergreifende Versorgung mit beispielloser Professionalität.",
+    "Prof. Elena Rostova": "Prof. Elena Rostova",
+    "Director of Clinical Operations, EuroMed Medical Center": "Direktorin für klinische Einsätze, EuroMed Medical Center",
+    "Europe": "Europa",
+    "The neurological diagnostic systems provided by Averence allowed us to establish unprecedented precision in our assessments. Their dedicated advisory team expertly steered us through complex multi-national compliance hurdles with zero friction.": "Die von Averence bereitgestellten neurologischen Diagnosesysteme ermöglichten es uns, eine beispiellose Präzision in unseren Beurteilungen zu erreichen. Ihr engagiertes Beratungsteam lenkte uns fachkundig und völlig reibungslos durch komplexe multinationale Compliance-Hürden.",
+    "Dr. Tariq Al-Fayed": "Dr. Tariq Al-Fayed",
+    "Head of Neurological ICU, King Faisal Specialist Hosp.": "Leiter der neurologischen Intensivstation, King Faisal Specialist Hosp.",
+    "Middle East": "Naher Osten",
+    "Upgrading our surgical automation was a monumental undertaking, but the specialized robotic procurement handled by Averence proved to be the absolute gold standard in cross-border clinical trade. Reliable, communicative, and flawless.": "Die Modernisierung unserer chirurgischen Automatisierung war ein gewaltiges Unterfangen, aber die spezialisierte Roboterbeschaffung durch Averence erwies sich als der absolute Goldstandard im grenzüberschreitenden klinischen Handel. Zuverlässig, kommunikativ und fehlerfrei.",
+    "Dr. Sarah Jenkins": "Dr. Sarah Jenkins",
+    "Chief Surgeon, Pacific Medical Hub": "Chefchirurgin, Pacific Medical Hub",
+    "North America": "Nordamerika",
+    "Swipe to navigate": "Zum Navigieren wischen"
 });
